@@ -30,7 +30,7 @@ module ConfParser
   end
 
   def is_valid k, v
-    k && v && (! v.index /\s/)
+    k && v && (! k.index /\s/)
   end
 
   def parse_value v
