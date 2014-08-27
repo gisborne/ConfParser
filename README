@@ -1,0 +1,13 @@
+This my solution to:
+
+https://gist.github.com/ctcherry/ee2b56739a559edf05f2
+
+Call it like so:
+
+$ irb
+2.0.0-p247 :001 > require './ConfParser.rb'
+ => true 
+2.0.0-p247 :002 > f = File.open 'sample.txt'
+ => #<File:sample.txt> 
+2.0.0-p247 :003 > ConfParser.parse f
+ => {"host"=>"test.com", "server_id"=>55331, "server_load_alarm"=>2.5, "user"=>"user", "verbose"=>true, "test_mode"=>true, "debug_mode"=>"off", "log_file_path"=>"/tmp/logfile.log", "send_notifications"=>true} 
